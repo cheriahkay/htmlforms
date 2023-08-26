@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <style>
+              /* Form styles */
+      form {
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+      input{
+        padding-right: 50px;
+      }
+      label{
+        width: 240px;
+        display:inline-block
+      }
+      select{
+        overflow: hidden;
+      }
+      
+    </style>
+</head>
+<body>
+    <main>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" />
+            </div>
+            <br/>
+            <div>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" />
+            </div>
+            <br/>
+            <div>
+                <label for="street">Street</label>
+                <input type="text" id="street" />
+            </div>
+            <br/>
+            <div>
+                <label for="city">City</label>
+                <input type="text" id="city" />
+            </div>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Additional details</legend>
+            <div>
+                <label for="Biography" style="vertical-align:top">Biography</label>
+                <textarea cols="20" rows="2"></textarea>
+            </div>
+            <br/>
+            <div>
+                <label for="image">Image</label>
+                <input type="file" id="image"/>
+            </div>
+            <br/>
+            <div class="age">
+                <label for="Age group">Age group</label>
+                <input type="number" id="Age group" placeholder="0 to 9 years" min="0 years" max="9 years"/>
+            </div>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Interest</legend>
+            <div>
+                <label for="Hobbies" style="vertical-align: top;">Hobbies</label>
+                <select name="Hobbies" id="Hobbies" multiple>
+                    <option>Playing soccer</option>
+                    <option>Dancing</option>
+                    <option>Gardening</option>
+                    <option>Watching movies</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="Favourite car?">Favourite car?</label>
+                <select name="Favourite car?" id="Favourite car?" style="scrollbar-color: 
+                 solid #1729c9;;">
+                <option value="volvo">volvo</option>
+                <option value="mercedes">mercedes</option>
+                <option value="toyota">toyota</option>
+            </select>
+            </div>
+            <br/>
+            <div>
+                <label for="Favourite public transport?" style="vertical-align: top;">Favourite public transport?</label>
+                <select name="Favourite public transport?" id="Favourite public transport?" multiple>
+                       <option label="Ground" style="font-weight: bolder;"> </option>
+                       <option label="train" style="padding-left: 17px;"></option>
+                       <option label="bus" style="padding-left: 17px;"></option>
+                        <option label="Water" style="font-weight: bolder;"></option>                 
+                </select>
+        
+                
+            </div>
+        </fieldset>
+          
+    </form>
+</main>
+</body>
+</html>
